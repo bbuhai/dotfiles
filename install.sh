@@ -10,7 +10,7 @@ if [ -d ~/.dotfiles ]; then
     sudo pip install flake8 --upgrade
     vim -u ~/.dotfiles/vim/vimrc - +BundleInstall! +BundleClean! +qall
 else
-    git clone https://github.com/mvmocanu/dotfiles.git ~/.dotfiles/
+    git clone https://github.com/bbuhai/dotfiles.git ~/.dotfiles/
     git clone https://github.com/gmarik/vundle.git ~/.dotfiles/vim/bundle/vundle
 
     cd ~/.dotfiles
@@ -20,4 +20,4 @@ else
     sudo pip install flake8 --upgrade
     vim -u ~/.dotfiles/vim/vimrc - +BundleInstall +qall
 fi
-
+curl -L http://install.ohmyz.sh | sh

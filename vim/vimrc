@@ -12,7 +12,7 @@ Bundle 'scrooloose/syntastic.git'
 Bundle 'scrooloose/nerdcommenter.git'
 Bundle 'Lokaltog/vim-powerline.git'
 " needs vim 7.3
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " Ctrl-jklm  changes to that split
 map <c-j> <c-w>j
