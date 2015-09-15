@@ -9,9 +9,9 @@ install-git:
 	rm -f ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
 
-install-conky:
-	rm -f ~/.conkyrc
-	ln -s `pwd`/conky/conkyrc ~/.conkyrc
+#install-conky:
+#	rm -f ~/.conkyrc
+#	ln -s `pwd`/conky/conkyrc ~/.conkyrc
 
 install-tmux:
 	rm -f ~/.tmux.conf

@@ -28,3 +28,4 @@
     ls = ls-files
     out = log HEAD..origin
     killbranches = !git branch | grep -v master | xargs git branch -d 2> /dev/null
+    diffs = diff --staged
