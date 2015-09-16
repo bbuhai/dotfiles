@@ -1,18 +1,22 @@
 " General
 set nocompatible              " Don't be compatible with vi
 let mapleader=","             " Change the leader to be a comma vs slash
+filetype off
 
-set rtp+=~/.dotfiles/vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
+call vundle#begin()     " required
 
-Bundle 'gmarik/vundle.git'
-Bundle 'tpope/vim-fugitive.git'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive.git'
 Bundle 'tpope/vim-surround.git'
-Bundle 'scrooloose/syntastic.git'
-Bundle 'scrooloose/nerdcommenter.git'
-Bundle 'Lokaltog/vim-powerline.git'
+Plugin 'scrooloose/syntastic.git'
+Plugin 'scrooloose/nerdcommenter.git'
+Plugin 'Lokaltog/vim-powerline.git'
 " needs vim 7.3
-Bundle 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()           " requried
+filetype plugin indent on   " required
 
 " Ctrl-jklm  changes to that split
 map <c-j> <c-w>j

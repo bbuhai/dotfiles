@@ -6,6 +6,6 @@ export VIRTUALENV_USE_DISTRIBUTE=1
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
-export PROJECT_HOME=$HOME/work
+export PROJECT_HOME=$HOME/dev
 source /usr/local/bin/virtualenvwrapper.sh
 

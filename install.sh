@@ -8,16 +8,16 @@ if [ -d ~/.dotfiles ]; then
     git pull origin master
     sudo pip install pip --upgrade
     sudo pip install flake8 --upgrade
-    vim -u ~/.dotfiles/vim/vimrc - +BundleInstall! +BundleClean! +qall
+    vim +PluginInstall! +BundleClean! +qall
 else
     git clone https://github.com/bbuhai/dotfiles.git ~/.dotfiles/
-    git clone https://github.com/gmarik/vundle.git ~/.dotfiles/vim/bundle/vundle
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.dotfiles/vim/bundle/Vundle.vim
 
     cd ~/.dotfiles
     make install
 
     sudo pip install pip --upgrade
     sudo pip install flake8 --upgrade
-    vim -u ~/.dotfiles/vim/vimrc - +BundleInstall +qall
+    vim +PluginInstall +qall
 fi
 curl -L http://install.ohmyz.sh | sh
